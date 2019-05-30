@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
 	<meta charset="utf-8">
-	<title>Psychic Game</title>
+	<title>Psychic Guessing Game</title>
 </head>
 <body>
 
@@ -12,7 +12,7 @@
 		<p>Wins:</p>
 		<p>Losses:</p>
 		<p>Guesses Left:</p>
-		<p>Your Guesses so far:</p>
+		<p>Your Guesses so far!!!!:</p>
 	</div>
 
 	<script type="text/javascript">
@@ -26,7 +26,7 @@
 
 		 document.onkeyup = function(event) {
 
-		 	var userGuess = event.key;
+		 	 var userGuess = event.key;
 
 		 	var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
@@ -37,7 +37,8 @@
                 if (userGuess === computerGuess) {
 					wins++;
 					numGuesses = 9;
-					guessChoices = [];
+                    guessChoices = [];
+                    
 				}
 
 				if (userGuess != computerGuess) {
@@ -46,6 +47,7 @@
 				}
 
 				if (numGuesses === 0) {
+
 
 				numGuesses = 9;
 				losses ++;
